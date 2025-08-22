@@ -3,41 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adarsh - Introduction</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Adarsh | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      opacity: 0.9;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffc107;
+      color: black;
+    }
+
+    .socials {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .socials a {
+      font-size: 1.5rem;
+      color: #ff9800;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ffc107;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <h1>👋 Hello, I'm Adarsh</h1>
-    <p class="tagline">Diploma Student • Electrical Engineering • Government Polytechnic Dhanbad</p>
+  <!-- Hero / Intro -->
+  <header>
+    <div class="card">
+      <h1>Adarsh</h1>
+      <p>Diploma Student in Electrical Engineering</p>
+      <a href="#about" class="btn">About Me</a>
+      <a href="#contact" class="btn">Contact</a>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am currently pursuing a diploma in Electrical Engineering (2nd semester). 
-        I enjoy learning new concepts and improving myself step by step.
-      </p>
-    </section>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📧</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </header>
 
-    <section>
-      <h2>My Interests</h2>
-      <ul>
-        <li>Exploring new ideas 💡</li>
-        <li>Improving skills & consistency 📚</li>
-        <li>Growing personally and academically 🌱</li>
-      </ul>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Adarsh 👋<br>
+      I am currently pursuing a Diploma in Electrical Engineering from Government Polytechnic Dhanbad (2nd Semester, JCECEB Board).  
+      I enjoy learning through visuals, exploring technology, and working on personal growth.
+    </p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        📧 Reach me at: <a href="mailto:yourmail@example.com">yourmail@example.com</a>  
-      </p>
-    </section>
+  <!-- Interests Section -->
+  <section id="interests">
+    <h2>My Interests</h2>
+    <p>
+      🎥 Learning through visual content (videos, diagrams, animations)<br>
+      ⚡ Exploring electrical concepts and experiments<br>
+      📚 Self-improvement and personal growth<br>
+      💡 Creating simple projects & trying out new tools  
+    </p>
+  </section>
 
-    <footer>
-      <p>© 2025 Adarsh | Built with ❤️ on GitHub Pages</p>
-    </footer>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:adarsh@example.com" style="color:#ff9800;">adarsh@example.com</a></p>
+    <p>GitHub: <a href="#" style="color:#ff9800;">github.com/adarsh</a></p>
+    <p>LinkedIn: <a href="#" style="color:#ff9800;">linkedin.com/in/adarsh</a></p>
+  </section>
+
+  <footer>
+    © 2025 Adarsh | All Rights Reserved
+  </footer>
 </body>
 </html>
